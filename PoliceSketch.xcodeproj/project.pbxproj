@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4C75591C973EB4008F49A6 /* BodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C75581C973EB4008F49A6 /* BodyPart.m */; };
+		0B4C755C1C974D65008F49A6 /* PoliceSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C755B1C974D65008F49A6 /* PoliceSketch.m */; };
 		60D60712197C369000A4DE1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60711197C369000A4DE1D /* Foundation.framework */; };
 		60D60714197C369000A4DE1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60713197C369000A4DE1D /* CoreGraphics.framework */; };
 		60D60716197C369000A4DE1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60715197C369000A4DE1D /* UIKit.framework */; };
@@ -49,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4C75571C973EB4008F49A6 /* BodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyPart.h; sourceTree = "<group>"; };
+		0B4C75581C973EB4008F49A6 /* BodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyPart.m; sourceTree = "<group>"; };
+		0B4C755A1C974D65008F49A6 /* PoliceSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliceSketch.h; sourceTree = "<group>"; };
+		0B4C755B1C974D65008F49A6 /* PoliceSketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliceSketch.m; sourceTree = "<group>"; };
 		60D6070E197C369000A4DE1D /* PoliceSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliceSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D60711197C369000A4DE1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60D60713197C369000A4DE1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +154,10 @@
 				60D60727197C369000A4DE1D /* LPSViewController.m */,
 				60D60729197C369000A4DE1D /* Images.xcassets */,
 				60D60718197C369000A4DE1D /* Supporting Files */,
+				0B4C75571C973EB4008F49A6 /* BodyPart.h */,
+				0B4C75581C973EB4008F49A6 /* BodyPart.m */,
+				0B4C755A1C974D65008F49A6 /* PoliceSketch.h */,
+				0B4C755B1C974D65008F49A6 /* PoliceSketch.m */,
 			);
 			path = PoliceSketch;
 			sourceTree = "<group>";
@@ -232,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LPS;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Lighthouse Labs";
 				TargetAttributes = {
 					60D6072E197C369000A4DE1D = {
@@ -303,7 +313,9 @@
 			files = (
 				60D60722197C369000A4DE1D /* LPSAppDelegate.m in Sources */,
 				60D6071E197C369000A4DE1D /* main.m in Sources */,
+				0B4C75591C973EB4008F49A6 /* BodyPart.m in Sources */,
 				60D60728197C369000A4DE1D /* LPSViewController.m in Sources */,
+				0B4C755C1C974D65008F49A6 /* PoliceSketch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +374,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -422,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoliceSketch/PoliceSketch-Prefix.pch";
 				INFOPLIST_FILE = "PoliceSketch/PoliceSketch-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LighthouseLabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,6 +449,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PoliceSketch/PoliceSketch-Prefix.pch";
 				INFOPLIST_FILE = "PoliceSketch/PoliceSketch-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LighthouseLabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

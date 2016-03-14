@@ -7,18 +7,46 @@
 //
 
 #import "LPSViewController.h"
+#import "PoliceSketch.h"
 
 @interface LPSViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *eyeView;
+@property (weak, nonatomic) IBOutlet UIImageView *noseView;
+@property (weak, nonatomic) IBOutlet UIImageView *mouthView;
+
+@property (nonatomic, strong) PoliceSketch *currentFace;
 
 @end
 
 @implementation LPSViewController
 
+- (IBAction)cycleMouthForwardButton:(UIButton *)sender {
+    self.mouthView.image = [self.currentFace nextMouthImage];
+}
+- (IBAction)cycleMouthBackwardButton:(UIButton *)sender {
+    self.mouthView.image = [self.currentFace previousMouthImage];
+}
+
+- (IBAction)cycleNoseForwardButton:(UIButton *)sender {
+    self.noseView.image = [self.currentFace nextNoseImage];
+}
+- (IBAction)cycleNoseBackwardButton:(UIButton *)sender {
+    self.noseView.image = [self.currentFace previousNoseImage];
+}
+
+- (IBAction)cycleEyeForwardButton:(UIButton *)sender {
+    self.eyeView.image = [self.currentFace nextEyeImage];
+}
+
+- (IBAction)cycleEyeBackwardButton:(UIButton *)sender {
+    self.eyeView.image = [self.currentFace previousEyeImage];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
-    // Here is where you will create the buttons & image views and add them to the view.
+    self.currentFace = [[PoliceSketch alloc] init];
 }
 
 @end

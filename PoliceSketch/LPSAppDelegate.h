@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BodyPart.h"
 
 @interface LPSAppDelegate : UIResponder <UIApplicationDelegate>
 
